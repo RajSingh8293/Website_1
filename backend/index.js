@@ -9,7 +9,8 @@ import userRouter from "./routes/user.routes.js";
 const port = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: ["http://localhost:5175"],
+  // origin: ["http://localhost:5175"],
+  origin: ["https://website-1-frontend.vercel.app"],
   credentials: true,
 };
 app.use(cors(corsOptions));
