@@ -4,7 +4,9 @@ import Layout from "../components/Layout"
 const Home = () => {
     return (
         <Layout>
-            <Hero />
+            <section className="py-16">
+                <Hero />
+            </section>
         </Layout>
     )
 }

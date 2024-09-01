@@ -23,7 +23,9 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+// routes
 app.use("/api/v1", userRouter);
+
 connectDb()
   .then(() => {
     app.listen(port, () => {
